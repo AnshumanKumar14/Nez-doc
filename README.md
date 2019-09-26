@@ -1,10 +1,12 @@
 # Nez Setup
 
+## Nez Setup
+
 ![Nez framework](.gitbook/assets/nez-logo-black.png)
 
-## Setup
+### Setup
 
-### Install as a submodule:
+#### Install as a submodule:
 
 * create a `Monogame Cross Platform Desktop Project`
 * clone or download the [Nez](https://github.com/prime31/Nez) repository
@@ -15,7 +17,7 @@ If you intend to use any of the built in Effects or PostProcessors you should al
 
 Note: if you get compile errors referencing a missing `project.assets.json` file run `msbuild Nez.sln /t:restore` in the root Nez folder to restore them.
 
-### Install through [NuGet](https://www.nuget.org/):
+#### Install through [NuGet](https://www.nuget.org/):
 
 Add [Nez](https://www.nuget.org/packages/Nez/) to your project's NuGet packages. Optionally add the [Nez.FarseerPhysics](https://github.com/prime31/Nez/tree/master/Nez.FarseerPhysics) and [Nez.Persistence](https://github.com/prime31/Nez/tree/master/Nez.Persistence) NuGet packages.
 
@@ -25,15 +27,16 @@ All Nez shaders are compiled for OpenGL so be sure to use the DesktopGL template
 
 If you are developing a mobile application you will need to enable touch input by calling `Input.Touch.EnableTouchSupport()`.
 
-## Samples Repository
+### Samples Repository
 
 You can find the samples repo [here](https://github.com/prime31/Nez-Samples). It contains a variety of sample scenes that demonstrate the basics of getting stuff done with Nez. [The wiki](https://github.com/prime31/Nez/wiki) also contains a few short examples. [This YouTube playlist](https://www.youtube.com/playlist?list=PLb8LPjN5zpx0ZerxdoVarLKlWJ1_-YD9M) also has a few relevant videos.
 
-FNA Compatibility
-==========
-To make getting up and running with FNA easier there are separate csproj files (*.FNA.csproj). Note that you still have to install the required FNA native libs per the [FNA documentation](https://github.com/FNA-XNA/FNA/wiki/1:-Download-and-Update-FNA). The [MonoGameCompat class](https://github.com/prime31/Nez/blob/62bbcca5e346413cacc2c3f9e765e11ead568de5/Nez-PCL/Utils/MonoGameCompat.cs) is included as well and consists of a few extension methods that implmement some commonly used method that are in MonoGame but not in FNA.
+## FNA Compatibility
 
-## Setup details
+To make getting up and running with FNA easier there are separate csproj files \(\*.FNA.csproj\). Note that you still have to install the required FNA native libs per the [FNA documentation](https://github.com/FNA-XNA/FNA/wiki/1:-Download-and-Update-FNA). The [MonoGameCompat class](https://github.com/prime31/Nez/blob/62bbcca5e346413cacc2c3f9e765e11ead568de5/Nez-PCL/Utils/MonoGameCompat.cs) is included as well and consists of a few extension methods that implmement some commonly used method that are in MonoGame but not in FNA.
+
+### Setup details
+
 . Here is what you need to do to get up and running with Nez + FNA:
 
 * clone this repo recursively

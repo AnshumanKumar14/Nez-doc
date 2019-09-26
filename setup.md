@@ -64,7 +64,7 @@ The [Emitter](https://github.com/prime31/Nez/blob/master/Nez.Portable/Utils/Emit
 
 If you are buliding with the DEBUG compilation symbol, Nez includes a simple console that provides some useful information. Press the tilde \(~\) key to show/hide the console. Once it is open you can type 'help' to view all the available commands which include helper to log all loaded assets, total entity count, physics colliders managed by the SpatialHash, etc. Type 'help COMMAND' to get help information for a specific command.
 
-![in-game debug console](https://github.com/AnshumanKumar14/Nez-doc/tree/5f7d6292ccc24dbf7fa542f9d08781702cc2199e/images/console.png)
+![Ingame console](.gitbook/assets/console.png)
 
 You can also easily add your own command to the debug console. Just add the [**CommandAttribute**](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DefaultCommands.cs) to any static method and specify the command name and help string. Commands can have a single parameter. Here is an example of one of the built-in commands:
 
