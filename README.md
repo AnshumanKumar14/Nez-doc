@@ -1,4 +1,4 @@
-# Nez documentation
+# Nez Core
 
 ## Nez Core
 
