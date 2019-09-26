@@ -4,6 +4,8 @@ Nez includes some really handy runtime [Entity](https://github.com/prime31/Nez/b
 
 > With non-US keyboard, you may not be able to open debug console via tilde key. Then, you may want to change [DebugConsole](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs).ConsoleKey.
 
+![](.gitbook/assets/inspector.png)
+
 ## Exposing Properties and Fields in the Inspector
 
 By default, the [inspector](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/RuntimeInspector.cs) will display any public properties/fields that are of a supported type. It will also check Materials for non-null Effects and it will display any valid properties from the Effect. The inspector can also display private fields/properties by just adding the `Inspectable` attribute:
