@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Nez Core](README.md)
+* [Nez Setup](README.md)
 * [Setup](setup.md)
 * [Scene-Entity-Component](scene-entity-component.md)
 * [Rendering](rendering.md)

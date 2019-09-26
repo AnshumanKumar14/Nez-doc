@@ -1,4 +1,4 @@
-# Setup
+# Nez Setup
 
 ## Setup
 
