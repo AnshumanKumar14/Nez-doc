@@ -2,6 +2,8 @@
 
 Nez includes some really handy runtime [Entity](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Entity.cs) and [PostProcessor](https://github.com/prime31/Nez/blob/master/Nez.Portable/Graphics/PostProcessing/PostProcessor.cs) inspection facilities. You can access the inspector by opening the [debug console](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs) \(via the tilde key\) and then using the `inspect` command. Out of the box the inspector can inspect the following types: `int`, `float`, `string`, `bool`, `enum`, `Color`, some `struct`s, [Effect](https://github.com/FNA-XNA/FNA/blob/master/src/Graphics/Effect/Effect.cs) subclasses and [Transform](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Transform.cs). When you use the `inspect` command you can either pass in an `Entity` name or `pp`, the latter will inspect all the `PostProcessor`s in the `Scene`.
 
+> With non-US keyboard, you may not be able to open debug console via tilde key. Then, you may want to change [DebugConsole](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs).ConsoleKey.
+
 ## Exposing Properties and Fields in the Inspector
 
 By default, the [inspector](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/RuntimeInspector.cs) will display any public properties/fields that are of a supported type. It will also check Materials for non-null Effects and it will display any valid properties from the Effect. The inspector can also display private fields/properties by just adding the `Inspectable` attribute:
