@@ -29,9 +29,12 @@ If you are developing a mobile application you will need to enable touch input b
 
 You can find the samples repo [here](https://github.com/prime31/Nez-Samples). It contains a variety of sample scenes that demonstrate the basics of getting stuff done with Nez. [The wiki](https://github.com/prime31/Nez/wiki) also contains a few short examples. [This YouTube playlist](https://www.youtube.com/playlist?list=PLb8LPjN5zpx0ZerxdoVarLKlWJ1_-YD9M) also has a few relevant videos.
 
-## Using Nez with FNA
+FNA Compatibility
+==========
+To make getting up and running with FNA easier there are separate csproj files (*.FNA.csproj). Note that you still have to install the required FNA native libs per the [FNA documentation](https://github.com/FNA-XNA/FNA/wiki/1:-Download-and-Update-FNA). The [MonoGameCompat class](https://github.com/prime31/Nez/blob/62bbcca5e346413cacc2c3f9e765e11ead568de5/Nez-PCL/Utils/MonoGameCompat.cs) is included as well and consists of a few extension methods that implmement some commonly used method that are in MonoGame but not in FNA.
 
-Note that you have to install the required FNA native libs per the [FNA documentation](https://github.com/FNA-XNA/FNA/wiki/1:-Download-and-Update-FNA). Here is what you need to do to get up and running with Nez + FNA:
+## Setup details
+. Here is what you need to do to get up and running with Nez + FNA:
 
 * clone this repo recursively
 * open the Nez solution \(Nez/Nez.sln\) and build it. This will cause the NuGet packages to refresh.
