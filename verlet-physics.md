@@ -1,4 +1,4 @@
-# [Verlet physics](https://github.com/prime31/Nez/tree/master/Nez.Portable/Physics/Verlet)
+# Verlet physics
 
 [Nez](https://github.com/prime31/Nez) includes a flexible [verlet physics](https://github.com/prime31/Nez/tree/master/Nez.Portable/Physics/Verlet) system. It comes with example objects such as lines, tires, balls, cloth and more. [verlet physics](https://github.com/prime31/Nez/tree/master/Nez.Portable/Physics/Verlet) differ greatly from the normal rigid body physics most folks are accustomed to \([Box2D](https://box2d.org/), [Chipmunk](https://chipmunk-physics.net/), [PhysX](https://www.geforce.com/hardware/technology/physx), [Bullet](https://pybullet.org/wordpress/), etc\). The goal of Nez's [verlet physics](https://github.com/prime31/Nez/tree/master/Nez.Portable/Physics/Verlet) simulation is not to be a full physics simulation. It is here to provide some neat effects and interactions to jazz up your games.
 

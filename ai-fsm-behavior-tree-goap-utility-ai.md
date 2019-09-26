@@ -1,4 +1,4 @@
-# [AI](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI) \([FSM](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI/FSM), [Behavior Tree](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI/BehaviorTree), [GOAP](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI/GOAP), [Utility AI](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI/UtilityAI)\)
+# AI \(FSM, Behavior Tree, GOAP, Utility AI\)
 
 ## [AI](https://github.com/prime31/Nez/tree/master/Nez.Portable/AI)
 

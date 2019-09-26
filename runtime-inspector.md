@@ -1,4 +1,4 @@
-# [Runtime Inspector](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/RuntimeInspector.cs)
+# Runtime Inspector
 
 Nez includes some really handy runtime [Entity](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Entity.cs) and [PostProcessor](https://github.com/prime31/Nez/blob/master/Nez.Portable/Graphics/PostProcessing/PostProcessor.cs) inspection facilities. You can access the inspector by opening the [debug console](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs) \(via the tilde key\) and then using the `inspect` command. Out of the box the inspector can inspect the following types: `int`, `float`, `string`, `bool`, `enum`, `Color`, some `struct`s, [Effect](https://github.com/FNA-XNA/FNA/blob/master/src/Graphics/Effect/Effect.cs) subclasses and [Transform](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Transform.cs). When you use the `inspect` command you can either pass in an `Entity` name or `pp`, the latter will inspect all the `PostProcessor`s in the `Scene`.
 
@@ -55,7 +55,7 @@ float groundAccel = 1.0f;
 
 ## Extending the Inspector
 
-You can display any custom types in the inspector as well by writing your own custom inspectors. You can do this by adding the `CustomInspector` attribute on the class that you want to make a custom inspector for \(YourClass in the example below\). The attribute takes in a single parameter which is the Type of the `Inspector` subclass that manages the UI for the class \(YourClassInspector in the example\). Note that the `Inspector` subclass is wrapped in _\#_if/_\#_endif so that it is only compiled into debug builds.
+You can display any custom types in the inspector as well by writing your own custom inspectors. You can do this by adding the `CustomInspector` attribute on the class that you want to make a custom inspector for \(YourClass in the example below\). The attribute takes in a single parameter which is the Type of the `Inspector` subclass that manages the UI for the class \(YourClassInspector in the example\). Note that the `Inspector` subclass is wrapped in _\#\_if/_\#\_endif so that it is only compiled into debug builds.
 
 The `Inspector` class provides several helpers to assist with making custom inspectors. It will cache access to the getter/setter for the field/property for easy access. It wraps access to the getter/setter via the `GetValue` and `SetValue` methods which are generic and take care of casting for you. If you want to add your own custom attributes on the field/property they are accessible via the `GetFieldOrPropertyAttribute` generic method.
 

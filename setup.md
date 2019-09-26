@@ -1,4 +1,4 @@
-# [Nez Core](https://github.com/prime31/Nez/blob/master/Nez.Portable/Core.cs)
+# Nez Core
 
 ## [Nez Core](https://github.com/prime31/Nez/blob/master/Nez.Portable/Core.cs)
 
@@ -58,7 +58,7 @@ The [CoroutineManager](https://github.com/prime31/Nez/blob/master/Nez.Portable/U
 
 Core provides an emitter that fires events at some key times. Access is via **Core.Emitter.AddObserver** and **Core.Emitter.RemoveObserver**. The **CoreEvents** enum defines all the events available.
 
-The [Emitter](https://github.com/prime31/Nez/blob/master/Nez.Portable/Utils/Emitter.cs) class is available for use in your own classes as well. You can key events by int, enum or any struct. It was really built with int or enum in mind but there is no way to use generics to constrain to just those types. Note that as a performance enhancement if you are using `enum` as the event type it is recommended to pass in a custom `IEqualityComparer` to the `Emitter` constructor to avoid boxing. See the **[CoreEventsComparer](https://github.com/prime31/Nez/blob/master/Nez.Portable/CoreEvents.cs)** for a simple template to copy for your own custom `IEqualityComparer`.
+The [Emitter](https://github.com/prime31/Nez/blob/master/Nez.Portable/Utils/Emitter.cs) class is available for use in your own classes as well. You can key events by int, enum or any struct. It was really built with int or enum in mind but there is no way to use generics to constrain to just those types. Note that as a performance enhancement if you are using `enum` as the event type it is recommended to pass in a custom `IEqualityComparer` to the `Emitter` constructor to avoid boxing. See the [**CoreEventsComparer**](https://github.com/prime31/Nez/blob/master/Nez.Portable/CoreEvents.cs) for a simple template to copy for your own custom `IEqualityComparer`.
 
 ### [Debug Console](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs)
 
@@ -66,7 +66,7 @@ If you are buliding with the DEBUG compilation symbol, Nez includes a simple con
 
 ![in-game debug console](https://github.com/AnshumanKumar14/Nez-doc/tree/5f7d6292ccc24dbf7fa542f9d08781702cc2199e/images/console.png)
 
-You can also easily add your own command to the debug console. Just add the **[CommandAttribute](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DefaultCommands.cs)** to any static method and specify the command name and help string. Commands can have a single parameter. Here is an example of one of the built-in commands:
+You can also easily add your own command to the debug console. Just add the [**CommandAttribute**](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DefaultCommands.cs) to any static method and specify the command name and help string. Commands can have a single parameter. Here is an example of one of the built-in commands:
 
 ```csharp
 [Command( "assets", "Logs all loaded assets. Pass 's' for scene assets or 'g' for global assets" )]

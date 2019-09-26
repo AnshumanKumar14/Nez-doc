@@ -1,4 +1,4 @@
-# [Scene-Entity-Component](https://github.com/prime31/Nez/tree/master/Nez.Portable/ECS)
+# Scene-Entity-Component
 
 [Nez](https://github.com/prime31/Nez) supports entity systems much like you have probably already seen in other entity-component systems. Entity Systems are an easy way to encapsulate game logic that spans across different entities and components. [Nez](https://github.com/prime31/Nez) systems are heavily inspired by [Artemis-odb](https://github.com/junkdog/artemis-odb)
 

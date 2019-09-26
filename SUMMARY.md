@@ -9,7 +9,6 @@
 * [Physics](physics.md)
 * [Farseer physics](farseer-physics.md)
 * [Verlet physics](verlet-physics.md)
-* [Links](links.md)
 * [Entity Processing Systems](entity-processing-systems.md)
 * [Deferred lighting](deferred-lighting.md)
 * [Nez UI](nez-ui.md)
@@ -17,4 +16,5 @@
 * [Runtime Inspector](runtime-inspector.md)
 * [Svg Support](svg-support.md)
 * [AI \(FSM, Behavior Tree, GOAP, Utility AI\)](ai-fsm-behavior-tree-goap-utility-ai.md)
+* [Links](links.md)
 
