@@ -1,5 +1,7 @@
 # Nez Setup
 
+![Nez framework](.gitbook/assets/nez-logo-black.png)
+
 ## Setup
 
 ### Install as a submodule:
