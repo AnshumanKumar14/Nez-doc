@@ -1,17 +1,17 @@
-# Runtime Inspector
+# [Runtime Inspector](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/RuntimeInspector.cs)
 
-Nez includes some really handy runtime Entity and PostProcessor inspection facilities. You can access the inspector by opening the debug console \(via the tilde key\) and then using the `inspect` command. Out of the box the inspector can inspect the following types: int, float, string, bool, enum, Color, some structs, Effect subclasses and Transform. When you use the `inspect` command you can either pass in an Entity name or `pp`, the latter will inspect all the PostProcessors in the Scene.
+Nez includes some really handy runtime [Entity](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Entity.cs) and [PostProcessor](https://github.com/prime31/Nez/blob/master/Nez.Portable/Graphics/PostProcessing/PostProcessor.cs) inspection facilities. You can access the inspector by opening the [debug console](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Console/DebugConsole.cs) \(via the tilde key\) and then using the `inspect` command. Out of the box the inspector can inspect the following types: `int`, `float`, `string`, `bool`, `enum`, `Color`, some `struct`s, [Effect](https://github.com/FNA-XNA/FNA/blob/master/src/Graphics/Effect/Effect.cs) subclasses and [Transform](https://github.com/prime31/Nez/blob/master/Nez.Portable/ECS/Transform.cs). When you use the `inspect` command you can either pass in an `Entity` name or `pp`, the latter will inspect all the `PostProcessor`s in the `Scene`.
 
 ## Exposing Properties and Fields in the Inspector
 
-By default, the inspector will display any public properties/fields that are of a supported type. It will also check Materials for non-null Effects and it will display any valid properties from the Effect. The inspector can also display private fields/properties by just adding the `Inspectable` attribute:
+By default, the [inspector](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/RuntimeInspector.cs) will display any public properties/fields that are of a supported type. It will also check Materials for non-null Effects and it will display any valid properties from the Effect. The inspector can also display private fields/properties by just adding the `Inspectable` attribute:
 
 ```csharp
 [Inspectable]
 string myPrivateField;
 ```
 
-Int and float fields/properties can optionally be displayed with a slider by adding the `Range` attribute. Note that you do not have to add both the `Inspectable` and `Range` attributes for private fields/properties. Just the `Range` attribute is enough to let the inspector know you want it displayed.
+Int and float fields/properties can optionally be displayed with a slider by adding the `Range` [attribute](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/Attributes.cs). Note that you do not have to add both the `Inspectable` and `Range` [attributes](https://github.com/prime31/Nez/blob/master/Nez.Portable/Debug/Inspector/Attributes.cs) for private fields/properties. Just the `Range` attribute is enough to let the inspector know you want it displayed.
 
 ```csharp
 [Range( 0.1f, 100 )]
